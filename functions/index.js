@@ -15,6 +15,10 @@ app.get('/another-one', (req, res) => {
     res.send('This one works, too!');
 })
 
+app.delete('/delete-one', (req, res) => {
+    Array.splice(3,1)
+})
+
 exports.api = functions.https.onRequest(app);
 
 
