@@ -19,6 +19,8 @@ exports.api = functions.https.onRequest(app);
 
 
 
+
+
 exports.helloThere = functions.https.onRequest((req, res) => {
     res.send('Hello there Firebase Cloud user');
 })
